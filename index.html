@@ -1,107 +1,33 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Login and Signup Form </title>
-
-        <!-- CSS -->
-        <link rel="stylesheet" href="style.css">
-                
-        <!-- Boxicons CSS -->
-        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-                        
-    </head>
-    <body>
-        <section class="container forms">
-            <div class="form login">
-                <div class="form-content">
-                    <header>Login</header>
-                    <form action="#">
-                        <div class="field input-field">
-                            <input type="email" placeholder="Email" class="input">
-                        </div>
-
-                        <div class="field input-field">
-                            <input type="password" placeholder="Password" class="password">
-                            <i class='bx bx-hide eye-icon'></i>
-                        </div>
-
-                        <div class="form-link">
-                            <a href="#" class="forgot-pass">Forgot password?</a>
-                        </div>
-
-                        <div class="field button-field">
-                            <button>Login</button>
-                        </div>
-                    </form>
-
-                    <div class="form-link">
-                        <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
-                    </div>
-                </div>
-
-               
-
-            </div>
-
-            <!-- Signup Form -->
-
-            <div class="form signup">
-                <div class="form-content">
-                    <header>Signup</header>
-                    <form action="#">
-                        <div class="field input-field">
-                            <input type="text" placeholder="Enter FirstName" name="uname" >
-                        </div>
-                        <div class="field input-field">
-                            <input type="text" placeholder="Enter LastName" name="uname" >
-                        </div>
-                   
-                        <div class="field input-field">
-                            <input type="email" placeholder="Email" class="input">
-                        </div>
-
-                        <div class="field input-field">
-                            <input type="password" placeholder="Create password" class="password">
-                        </div>
-
-                        <div class="field input-field">
-                            <input type="password" placeholder="Confirm password" class="password">
-                            <i class='bx bx-hide eye-icon'></i>
-                        </div>
-                        
-                        <div class="field input-field">
-                            <input type="text" placeholder="Address" name="adress" >
-                        </div>
-                        <div class="field input-field">
-                            <input type="text" placeholder="Phone" name="uname" >
-                        </div>
-                        <div  class="field input-field">
-                            <input type="file" placeholder="Image" name="uimage" >
-                        </div>
-                        
-
-                        <div class="field button-field">
-                         <button type="submit" id="signup-button">Sign Up</button> 
-                         
-                        </div>
-                    </form>
-
-                    <div class="form-link">
-                        <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
-                    </div>
-                </div>
-
-
-            </div>
-        </section>
-
-        <!-- JavaScript -->
-       
-    </body>
-</html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Login and Sign Up</title>
+</head>
+<body>
+<div class="container">
+<div class="form-container" id="login-form">
+<h2>Login</h2>
+<input type="email" id="login-email" placeholder="Email">
+<input type="password" id="login-password" placeholder="Password">
+<i class="fa fa-eye" id="toggle-password"></i>
+<button id="login-button">Login</button>
+<p>Don't have an account? <span id="signup-link">Sign Up</span></p>
+</div>
+<div class="form-container hidden" id="signup-form">
+<h2>Sign Up</h2>
+<input  type="text" id="signup-firstname" placeholder="First Name">
+<input type="text" id="signup-lastname" placeholder="Last Name">
+<input type="email" id="signup-email" placeholder="Email">
+<input type="password" id="signup-password" placeholder="Password">
+<input type="text" id="signup-address" placeholder="Address">
+<input type="tel" id="signup-phone" placeholder="Phone">
+<input type="file" id="image-upload" accept="image/*">
+<button id="signup-button">Sign Up</button>
+</div>
+</div>
 <script src="app.js"></script>
-</body>
+<!-- <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="4db756644da1c4865d97b7e1-|49" defer></script></body> -->
 </html>
