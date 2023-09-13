@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.25/webcam.js"></script>
 <title>Login and Sign Up</title>
 </head>
 <body>
@@ -25,9 +26,16 @@
 <input type="text" id="signup-address" placeholder="Address">
 <input type="tel" id="signup-phone" placeholder="Phone">
 <input type="file" id="image-upload" accept="image/*">
+<div id="camera" style="height:auto;width:auto; text-align:left;"></div>
+
+    <!--FOR THE SNAPSHOT-->
+    <input type="button" value="Take a Snap" id="btPic" onclick="takeSnapShot()" /> 
+    <p id="snapShot"></p>
 <button id="signup-button">Sign Up</button>
 </div>
 </div>
-<script src="app.js"></script>
+<script src="app.js">
+    
+</script>
 <!-- <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="4db756644da1c4865d97b7e1-|49" defer></script></body> -->
 </html>
