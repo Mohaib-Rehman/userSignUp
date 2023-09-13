@@ -81,3 +81,18 @@ loginButton.addEventListener("click", () => {
     alert("User not found. Please sign up.");
   }
 });
+Webcam.set({
+  width: 220,
+  height: 190,
+  image_format: "jpeg",
+  jpeg_quality: 100,
+});
+Webcam.attach("#camera");
+
+// SHOW THE SNAPSHOT.
+takeSnapShot = function () {
+  Webcam.snap(function (data_uri) {
+    document.getElementById("snapShot").innerHTML =
+      '<img src="' + data_uri + '" width="70px" height="50px" />';
+  });
+};
