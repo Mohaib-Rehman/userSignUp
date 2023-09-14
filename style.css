@@ -3,7 +3,7 @@
     .container {
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: auto    ;
         width: 100%;
         /* background-color: #4070f4; */
         display: flex;
@@ -28,7 +28,7 @@
         justify-content: center;
         align-items: center;
         margin-right: 30px;
-        height: 100vh;
+        height: auto;
         background-color: #4070f4;
     }
     
@@ -88,6 +88,7 @@
     .hidden {
         display: none;
     }
+   
     @media screen and (max-width: 400px) {
         .form{
             padding: 50px 20px;
